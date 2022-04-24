@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container-fluid bg-dark text-white text-center p-3"><h1>Black Jack</h1></div>
+    <div class="container text-center my-4"> 
+        <button id = "btn-new"class="btn btn-primary ms-1">Nuevo Juego</button>
+        <button id="btn-card" class="btn btn-primary ms-1">Pedir Carta</button>
+        <button id="btn-stop" class="btn btn-danger ms-1">Detenerse</button>
+    </div>
+    <div class ="container my-5">
+        <div id="jugador" class="row my-5">
+            <div class="col-12 nb-2">
+                <h2 class="text-white fs-1">Jugador - <small id="puntosJugador">0</small></h2>
+            </div>
+           <div id = "cartasJugador"class="col-12">
+
+            </div>
+        </div>
+        <div id="computadora" class="row my-5">
+            <div class="col-12 nb-2">
+                <h2 class="text-white fs-1">Computadora - <small id="puntosComputadora" >0</small></h2>
+            </div>
+           <div id="cartasComputadora"class="col-12">
+
+            </div>
+            <div id="mensajeGanador" hidden>
+                <h2>Hay un ganador</h2>
+            </div>
+        </div>  
+    </div>
+ <script src="/scrip/jquery-3.6.0.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"></script>
+ <script src="/scrip/jq.js"></script>
+</body>
+</html>
